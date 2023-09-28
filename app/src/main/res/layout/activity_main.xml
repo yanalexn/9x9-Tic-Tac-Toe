@@ -1,4 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greyBackground"
+    android:gravity="center"
+    tools:context=".activity.MainActivity">
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="3pt"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="40pt"
+            android:layout_height="40pt"
+            android:layout_marginLeft="3pt"
+            android:background="@drawable/square_button_background"
+            android:backgroundTint="@color/white"
+            android:onClick="btnClick" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="40pt"
+            android:layout_height="40pt"
+            android:layout_marginLeft="3pt"
+            android:background="@drawable/square_button_background"
+            android:backgroundTint="@color/white"
+            android:onClick="btnClick" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="40pt"
+            android:layout_height="40pt"
+            android:layout_marginLeft="3pt"
+            android:background="@drawable/square_button_background"
+            android:backgroundTint="@color/white"
+            android:onClick="btnClick" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="3pt"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="40pt"
+            android:layout_height="40pt"
+            android:layout_marginLeft="3pt"
+            android:background="@drawable/square_button_background"
+            android:backgroundTint="@color/white"
+            android:onClick="btnClick" />
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="40pt"
+            android:layout_height="40pt"
+            android:layout_marginLeft="3pt"
+            android:background="@drawable/square_button_background"
+            android:backgroundTint="@color/white"
+            android:onClick="btnClick" />
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="40pt"
+            android:layout_height="40pt"
+            android:layout_marginLeft="3pt"
+            android:background="@drawable/square_button_background"
+            android:backgroundTint="@color/white"
+            android:onClick="btnClick" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="3pt"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn7"
+            android:layout_width="40pt"
+            android:layout_height="40pt"
+            android:layout_marginLeft="3pt"
+            android:background="@drawable/square_button_background"
+            android:backgroundTint="@color/white"
+            android:onClick="btnClick" />
+
+        <Button
+            android:id="@+id/btn8"
+            android:layout_width="40pt"
+            android:layout_height="40pt"
+            android:layout_marginLeft="3pt"
+            android:background="@drawable/square_button_background"
+            android:backgroundTint="@color/white"
+            android:onClick="btnClick" />
+
+        <Button
+            android:id="@+id/btn9"
+            android:layout_width="40pt"
+            android:layout_height="40pt"
+            android:layout_marginLeft="3pt"
+            android:background="@drawable/square_button_background"
+            android:backgroundTint="@color/white"
+            android:onClick="btnClick" />
+
+    </TableRow>
+    <!--
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -6,23 +120,18 @@
     android:layout_height="match_parent"
     tools:context=".activity.MainActivity">
 
-    <!--    <ScrollView-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="match_parent"-->
-    <!--        tools:layout_editor_absoluteX="16dp"-->
-    <!--        tools:layout_editor_absoluteY="72dp">-->
 
-    <com.example.a9x9_tic_tac_toe.layout.ScalableGridLayout
-        android:id="@+id/gridLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:columnCount="9"
-        android:padding="16dp"
-        android:rowCount="9"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="-16dp">
+        <com.example.a9x9_tic_tac_toe.layout.ScalableGridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="9"
+            android:padding="16dp"
+            android:rowCount="9"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="-16dp">
 
-    </com.example.a9x9_tic_tac_toe.layout.ScalableGridLayout>
-    <!--    </ScrollView>-->
-</androidx.constraintlayout.widget.ConstraintLayout>
+        </com.example.a9x9_tic_tac_toe.layout.ScalableGridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>-->
+</TableLayout>
