@@ -162,6 +162,14 @@ class MainActivity : AppCompatActivity() {
         button.isEnabled = true
     }
 
+    fun btnRequestEvent(view: View) {
+        val userEmail = binding.etEmail.text
+    }
+
+    fun btnAcceptEvent(view: View) {
+
+
+    }
 
     /*    private lateinit var binding: ActivityMainBinding
         private lateinit var gridLayout: ScalableGridLayout
