@@ -10,15 +10,20 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.a9x9_tic_tac_toe.R
 import com.example.a9x9_tic_tac_toe.databinding.ActivityMainBinding
 import com.example.a9x9_tic_tac_toe.engine.Player
+import com.google.firebase.database.FirebaseDatabase
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
+    private val db = FirebaseDatabase.getInstance().reference
+    private var myEmail: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        val bundle = intent.extras
+        myEmail = bundle?.getString("email")
     }
 
     fun btnClick(view: View) {
@@ -163,11 +168,16 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun btnRequestEvent(view: View) {
-        val userEmail = binding.etEmail.text
+        val userEmail = "${binding.etEmail.text}"
+        db.child("user")
+            .child(userEmail)
+            .child("request")
+            .push()//creates random id
+            .setValue(myEmail)
     }
 
     fun btnAcceptEvent(view: View) {
-
+        val userEmail = "${binding.etEmail.text}"
 
     }
 

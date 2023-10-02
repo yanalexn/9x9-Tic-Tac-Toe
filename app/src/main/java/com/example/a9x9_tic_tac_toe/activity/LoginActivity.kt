@@ -41,7 +41,8 @@ class LoginActivity : AppCompatActivity() {
                     val currentUser = auth.currentUser
                     if (currentUser != null) {
                         dbRef.child("user")
-                            .child(currentUser.uid)
+                            .child(currentUser.email ?: "")
+                            .child("request")
                             .setValue(currentUser.email)
                     }
                     loadMain()
